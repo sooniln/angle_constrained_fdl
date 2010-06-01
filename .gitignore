@@ -1,0 +1,6 @@
+.*
+!.gitignore
+
+# binary directories
+bin
+obj
