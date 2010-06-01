@@ -1,0 +1,18 @@
+Requirements:
+.NET v4 or greater
+VS 2010 or greater
+
+You should be able to reform the project in earlier version of visual studio and compile, but its not guaranteed. NETv4 is a necessity. Compilation should be straight forward.
+
+The following companion dlls are included:
+
+CollectionLib.dll - A series of basic collection classes not provided by the framework. Includes a binary heap and a heap priority queue as well as several related interfaces.
+
+GraphLib.dll - Contains a set of interfaces for dealing with graphs and a default implementation for graphs with decent but very unoptimized read/write performance.
+
+Algorithms.dll - Contains a series of algorithms for dealing with graphs. A-star, Djikstras, breadth-first, depth-first, etc...
+
+Notes:
+MutableVector and MutablePoint exist for perf reasons only and are therefore not exposed outside the project. There are still several perf optimizations that can be made, such as reducing the complexity of the FDL inner loop or creating a graph implementation optimized for reading.
+
+There is no legal notice attached at the moment, so please play nice. Attribute code to me, please don't use this in a commercial enterprise and so forth.
